@@ -1,0 +1,46 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+CC	Makefile	/^CC = ${CROSS_COMPILE}gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS=-g -Wall$/;"	m
+CROSS_COMPILE	Makefile	/^CROSS_COMPILE ?=$/;"	m
+DEBUG_LEVEL_E	config.h	/^}DEBUG_LEVEL_E;$/;"	t	typeref:enum:__anon2
+E_ALL	config.h	/^    E_ALL,$/;"	e	enum:__anon2
+E_DEBUG	config.h	/^    E_DEBUG,$/;"	e	enum:__anon2
+E_ERROR	config.h	/^    E_ERROR,$/;"	e	enum:__anon2
+E_INFO	config.h	/^    E_INFO,$/;"	e	enum:__anon2
+LDFLAGS	Makefile	/^LDFLAGS=$/;"	m
+LIBS	Makefile	/^LIBS=-lcurl -ljansson -lpthread$/;"	m
+M_GET_FILE	urlopen.h	/^    M_GET_FILE,$/;"	e	enum:__anon1
+M_GET_RESPONSE	urlopen.h	/^    M_GET_RESPONSE,$/;"	e	enum:__anon1
+M_JSONRPC_URL	config.h	9;"	d
+M_URLOPEN_TYPE	urlopen.h	/^}M_URLOPEN_TYPE;$/;"	t	typeref:enum:__anon1
+SRC	Makefile	/^SRC=$(wildcard *.c)$/;"	m
+TARGET	Makefile	/^TARGET=github$/;"	m
+_BASE64_H_	base64.h	2;"	d
+_CONFIG_H_	config.h	2;"	d
+_DEBUG	config.h	7;"	d
+_URLOPEN_H_	urlopen.h	2;"	d
+base64_decode	base64.c	/^int base64_decode( const char * base64, char * bindata )$/;"	f	signature:( const char * base64, char * bindata )
+base64_decode	base64.h	/^int base64_decode( const char * base64, char * bindata );$/;"	p	signature:( const char * base64, char * bindata )
+base64_encode	base64.c	/^char * base64_encode( const char * bindata, char * base64, int binlength )$/;"	f	signature:( const char * bindata, char * base64, int binlength )
+base64_encode	base64.h	/^char * base64_encode( const char * bindata, char * base64, int binlength );$/;"	p	signature:( const char * bindata, char * base64, int binlength )
+base64char	base64.c	/^const char * base64char = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+\/";$/;"	v
+buff	urlopen.c	/^    char *buff;$/;"	m	struct:response	file:	access:public
+debug_level	main.c	/^DEBUG_LEVEL_E debug_level = E_DEBUG;$/;"	v
+log_msg	config.h	31;"	d
+log_msg	config.h	43;"	d
+m_urlget	urlopen.c	/^bool m_urlget(const char *url, void *out, uint32_t *out_len, M_URLOPEN_TYPE type)$/;"	f	signature:(const char *url, void *out, uint32_t *out_len, M_URLOPEN_TYPE type)
+m_urlget	urlopen.h	/^bool m_urlget(const char *url, void *out, uint32_t *out_len, M_URLOPEN_TYPE type);$/;"	p	signature:(const char *url, void *out, uint32_t *out_len, M_URLOPEN_TYPE type)
+m_write_file	urlopen.c	/^static size_t m_write_file(void *ptr, size_t size, size_t nmemb, void *stream)$/;"	f	file:	signature:(void *ptr, size_t size, size_t nmemb, void *stream)
+m_write_response	urlopen.c	/^static size_t m_write_response(void *response, size_t size, size_t nmemb, void *userp)$/;"	f	file:	signature:(void *response, size_t size, size_t nmemb, void *userp)
+main	main.c	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+response	urlopen.c	/^struct response{$/;"	s	file:
+response::buff	urlopen.c	/^    char *buff;$/;"	m	struct:response	file:	access:public
+response::size	urlopen.c	/^    size_t size;$/;"	m	struct:response	file:	access:public
+size	urlopen.c	/^    size_t size;$/;"	m	struct:response	file:	access:public
+url_download	urlopen.h	25;"	d
+url_get	urlopen.h	19;"	d
