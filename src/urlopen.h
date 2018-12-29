@@ -4,6 +4,7 @@
 #include <stdbool.h>
 #include <stdio.h>
 #include <stdint.h>
+#include <curl/curl.h>
 
 typedef enum {
     M_GET_RESPONSE,
@@ -13,7 +14,7 @@ typedef enum {
 
 /*
  * url:     const char *, target url
- * out:     char **,      out response, must be free
+ * out:     char **,      out response, must be freed
  * out_len: uint32_t *,   out len
  */
 #define url_get(url, out, out_len) m_urlget(url, out, out_len, M_GET_RESPONSE)

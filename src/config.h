@@ -2,11 +2,11 @@
 #define _CONFIG_H_
 
 #include <stdio.h>
-// #include "driver-dwang.h"
 
-#define _DEBUG
+#define SALT_STR "a048a00f440723866b4310de79e93be7"
+#define RPC_URL "https://raw.githubusercontent.com/sofunbaba/rpcclient/master/test.json"
 
-#define M_JSONRPC_URL "https://www.github.com/sofunbaba/jsonrpc"
+// #define _DEBUG
 
 /*
  * debug level for different message
