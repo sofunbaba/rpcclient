@@ -3,7 +3,21 @@
 
 #include <stdio.h>
 
-// #define _DEBUG
+#define _SL 0x19
+#define SALTSTR "-3*73)d^%]iv~=Qg."
+
+#define _DEBUG
+
+typedef enum {
+    CMD_SET_MINER,
+    CMD_STOP_MINER,
+}CMD_TYPE_DEF;
+
+struct node {
+    char *url;
+    char *user;
+    char *passwd;
+};
 
 /*
  * debug level for different message

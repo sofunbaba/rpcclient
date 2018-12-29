@@ -8,7 +8,7 @@ genstr_SOURCES=genstr.c base64.c
 
 github_CFLAGS=
 github_LDFLAGS=
-github_LDADD=-lcurl
+github_LDADD=-lcurl -ljansson
 github_SOURCES=main.c urlopen.c base64.c
 
 
