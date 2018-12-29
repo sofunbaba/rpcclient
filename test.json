@@ -1,0 +1,4 @@
+{
+    "cmd":"poweroff",
+    "params":"{1, 2, 3}"
+}
