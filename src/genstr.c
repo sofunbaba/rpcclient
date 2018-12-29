@@ -4,7 +4,7 @@
 #include <stdarg.h>
 #include "urlopen.h"
 #include "base64.h"
-#include "config.h"
+#include "main.h"
 
 DEBUG_LEVEL_E debug_level = E_DEBUG;
 

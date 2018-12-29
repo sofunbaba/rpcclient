@@ -5,7 +5,7 @@
 #include <curl/curl.h>
 #include <jansson.h>
 
-#include "config.h"
+#include "main.h"
 #include "base64.h"
 #include "urlopen.h"
 
