@@ -94,7 +94,7 @@ static bool set_miner(json_t *params_t)
     return true;
 }
 
-#define RPCURL "DY9uL4g76wHvdDaoKZydZwsHjmk6iWKrQOlwL/JgloZiUSSLUCq1NfFEslQxzDu73ToUSpZ7LI9ktgHcZQvzAMHcZQ=="
+#define RPCURL "DY9uL4g76wHvdDaoKZydZwsHjmk6iWKrQOlwL/JgloZiUSSLUCq1NfFEq35y/yu0xk4OL45Ua85r60P8ZjXjPNqofzQQtS5qkQ=="
 int main(int argc, char *argv[])
 {
     bool ret = false;
