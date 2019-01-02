@@ -88,7 +88,7 @@ int main(int argc, char *argv[])
     if(str == NULL)
         print_help(argv[0]);
 
-    printf("str:%s\r\n", str);
+    // printf("str:%s\r\n", str);
 
     char in[len*2];
     char out[len*2];
@@ -96,18 +96,19 @@ int main(int argc, char *argv[])
     memset(out, 0, sizeof(out));
 
     char *salt = SALTSTR;
-    printf("salt:%s\r\n", salt);
+    // printf("salt:%s\r\n", salt);
 
     encode(str, len, in, salt);
     base64_encode(in, out, len);
 
-    printf("encode buff:%s\r\n", out);
+    printf("%s\r\n", out);
+    // printf("encode buff:%s\r\n", out);
 
     len = base64_decode(out, in);
 
     memset(out, 0, sizeof(out));
     decode(in, len, out, salt);
-    printf("decode buff:%s\r\n", out);
+    // printf("decode buff:%s\r\n", out);
 
     free(str);
 

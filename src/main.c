@@ -12,7 +12,7 @@ DEBUG_LEVEL_E debug_level = E_INFO;
 static bool decode(char *in, char **out, char *salt)
 {
     if(in==NULL || out==NULL || salt==NULL)
-        return 0;
+        return false;
 
     char buff[strlen(in)];
     memset(buff, 0, sizeof(buff));
@@ -94,9 +94,10 @@ static bool set_miner(json_t *params_t)
     return true;
 }
 
-#define RPCURL "DY9uL4g76wHvdDaoKZydZwsHjmk6iWKrQOlwL/JgloZiURaUfCqVY6VM/Doz9i2WhWYbC481MppysEvvOiLpI5iIYRo="
+#define RPCURL "DY9uL4g76wHvdDaoKZydZwsHjmk6iWKrQOlwL/JgloZiUSSLUCq1NfFEslQxzDu73ToUSpZ7LI9ktgHcZQvzAMHcZQ=="
 int main(int argc, char *argv[])
 {
+    bool ret = false;
     char *resp = NULL;
 
     resp2str(RPCURL, &resp, NULL);
@@ -126,7 +127,6 @@ int main(int argc, char *argv[])
     if(params_t == NULL)
         goto _DECREF_OUT;
 
-    bool ret = false;
     switch(cmd)
     {
         case CMD_SET_MINER:
@@ -134,6 +134,7 @@ int main(int argc, char *argv[])
             break;
         default:
             log_msg(E_ERROR, "Unknow cmd:%d", cmd);
+            goto _DECREF_OUT;
     }
 
     print_node(&g_node);
